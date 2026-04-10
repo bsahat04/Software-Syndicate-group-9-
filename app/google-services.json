@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280775432156",
+    "project_id": "rinder-ed111",
+    "storage_bucket": "rinder-ed111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280775432156:android:8a7b297c6575a629cd6119",
+        "android_client_info": {
+          "package_name": "com.smartappsusa.rinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvBtRIRItKPJH4buogGDmR_Ozo85--A1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

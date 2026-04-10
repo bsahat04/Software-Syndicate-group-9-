@@ -18,6 +18,7 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:inputType="textEmailAddress"
         android:layout_below="@id/welcome"
         android:layout_marginTop="100dp"
         android:hint="@string/enter_email"
@@ -38,16 +39,26 @@
         />
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/submit"
+        android:text="Create Account"
         android:backgroundTint="@color/blue"
         android:textSize="20sp"/>
 
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"/>
 
 
 </RelativeLayout>
