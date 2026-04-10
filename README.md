@@ -1,0 +1,1 @@
+Rinder is a roommate-matching application built using a 3-layered MVC architecture. The system separates concerns into Presentation, Business Logic, and Data Access layers, and uses the Strategy Design Pattern for flexible compatibility scoring.
