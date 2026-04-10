@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Rinder</string>
+    <string name="welcome_to_rinder">Welcome To Rinder!</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">SUBMIT</string>
 </resources>
