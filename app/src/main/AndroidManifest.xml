@@ -11,16 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rinder">
-        <activity android:name="com.smartappsusa.rinder.HomeScreen"
-            android:windowSoftInputMode="adjustNothing"
-            android:exported="true">
+        <activity
+            android:name=".SecondScreen"
+            android:exported="false"
+            android:theme="@style/Theme.Rinder" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
-
 
 </manifest>

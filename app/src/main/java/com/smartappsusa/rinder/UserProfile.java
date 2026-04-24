@@ -1,4 +1,4 @@
-package com.smartappusa.rinder;
+package com.smartappsusa.rinder;
 public class UserProfile {
     private String username;
     private int cleanliness;
