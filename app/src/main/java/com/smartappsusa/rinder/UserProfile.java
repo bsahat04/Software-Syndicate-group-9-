@@ -3,24 +3,32 @@ package com.smartappsusa.rinder;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
 public class UserProfile {
+    private String userId;
     private String username;
+    private String email;
     private int cleanliness;
     private int budget;
     private int sleepSchedule;
     private int social;
     private int noise;
-    private String hobbies;
+    private List<String> hobbies;
 
 
-    public UserProfile(String username, int cleanliness, int budget, int sleepSchedule, int social, int noise, String hobbies){
+    public UserProfile(String userId, String username, String email, int cleanliness, int budget,
+                       int sleepSchedule, int social, int noise, List<String> hobbies){
+        this.userId = userId;
         setUsername(username);
+        setEmail(email);
         setCleanliness(cleanliness);
         setBudget(budget);
         setSleepSchedule(sleepSchedule);
         setSocial(social);
         setNoise(noise);
         setHobbies(hobbies);
+
     }
 
 
@@ -30,11 +38,17 @@ public class UserProfile {
 
     }
 
-
+    public String getUserId() {
+        return this.userId;
+    }
     public String getUsername(){
 
 
         return this.username;
+    }
+
+    public String getEmail(){
+        return this.email;
     }
 
 
@@ -72,7 +86,7 @@ public class UserProfile {
     }
 
 
-    public String getHobbies(){
+    public List<String> getHobbies(){
 
 
         return this.hobbies;
@@ -86,6 +100,10 @@ public class UserProfile {
 
     public void setUsername(String username){
         this.username = username;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
     }
 
 
@@ -103,14 +121,26 @@ public class UserProfile {
     }
 
 
-    public void setHobbies(String hobbies){
+    public void setHobbies(List<String> hobbies){
         this.hobbies = hobbies;
+    }
+
+    public void addHobbies(String hobby){
+        if (hobby != null && !hobby.trim().isEmpty()){
+            this.hobbies.add(hobby.trim());
+        }
+    }
+
+    public void removeHobby(String hobby){
+        this.hobbies.remove(hobby);
     }
 
 
     public Map<String, Object> toMap(){
         Map<String, Object> map = new HashMap<>();
+        map.put("userId", userId);
         map.put("username", username);
+        map.put("email", email);
         map.put("cleanliness", cleanliness);
         map.put("budget", budget);
         map.put("sleepSchedule", sleepSchedule);
@@ -120,13 +150,23 @@ public class UserProfile {
         return map;
     }
 
-
-    public static UserProfile fromMap(Map<String, Object> map){
-        return new UserProfile((String) map.get("username"), ((Long) map.get("cleanliness")).intValue(),
-                ((Long) map.get("budget")).intValue(), ((Long) map.get("sleepSchedule")).intValue(),
-                ((Long) map.get("social")).intValue(), ((Long) map.get("noise")).intValue(),
-                (String) map.get("hobbies"));
+    @SuppressWarnings("unchecked")
+    public static UserProfile fromMap(Map<String, Object> map) {
+        return new UserProfile(
+                (String) map.get("userId"),
+                (String) map.get("username"),
+                (String) map.get("email"),
+                ((Long) map.get("cleanliness")).intValue(),
+                ((Long) map.get("budget")).intValue(),
+                ((Long) map.get("sleepSchedule")).intValue(),
+                ((Long) map.get("social")).intValue(),
+                ((Long) map.get("noise")).intValue(),
+                (List<String>) map.get("hobbies")
+        );
     }
+
+
+
 
 
 
