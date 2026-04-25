@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation libs.appcompat
+    implementation libs.firebase.firestore
     implementation libs.material
 
     implementation platform("com.google.firebase:firebase-bom:34.4.0")
