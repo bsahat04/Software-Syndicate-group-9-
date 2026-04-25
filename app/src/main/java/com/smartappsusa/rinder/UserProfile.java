@@ -122,9 +122,9 @@ public class UserProfile {
 
 
     public static UserProfile fromMap(Map<String, Object> map){
-        return new UserProfile((String) map.get("username"), ((Long) map.get("cleanliness")).intValue(),
-                ((Long) map.get("budget")).intValue(), ((Long) map.get("sleepSchedule")).intValue(),
-                ((Long) map.get("social")).intValue(), ((Long) map.get("noise")).intValue(),
+        return new UserProfile((String) map.get("username"), ((Number) map.get("cleanliness")).intValue(),
+                ((Number) map.get("budget")).intValue(), ((Number) map.get("sleepSchedule")).intValue(),
+                ((Number) map.get("social")).intValue(), ((Number) map.get("noise")).intValue(),
                 (String) map.get("hobbies"));
     }
 
