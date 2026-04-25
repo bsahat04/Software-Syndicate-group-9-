@@ -46,4 +46,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="cleanliness">Cleanliness</string>
+    <string name="sleep_schedule">Sleep Schedule</string>
+    <string name="noise_level">Noise Level</string>
+    <string name="social">Social</string>
+    <string name="budget">Budget</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="save">Save</string>
 </resources>

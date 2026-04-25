@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cleanliness" type="id" />
+    <item name="sleep_schedule" type="id" />
+    <item name="noise_level" type="id" />
+    <item name="social" type="id" />
+    <item name="budget" type="id" />
+    <item name="hobbies" type="id" />
+    <item name="save" type="id" />
+</resources>
